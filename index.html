@@ -1,22 +1,63 @@
-<html>
-  <head>
-<<<<<<< HEAD
-    <style>
-       body {
-         background-image: url("back.jpg");
-         background-repeat: no-repeat;
-         background-size: auto;
-         h1 {
-      color: white;
-      text-align: center;
-      font-size: 60px;
-    }
-       }
->>>>>>> 864c1cdaee86d703121dcb8f4ca9e293ee293d00
-    </style>
-    <title> Signs&Symbols Project </title>
-  </head>
-  <body>
-    <h1 style="font-size: 60px;"> This is my blog about all the things that I find interesting or fun</h1>
-    <p style="font-size: 40px;"> I'm a mexican physicist interested in science, art, psychology and the Internet</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="red-container">
+        <header>
+          <h1>The Signs&Symbols Project</h1>
+           <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="images/ham.svg" alt="toggle menu" class="menu" id="menu">
+                </a>
+
+                <ul class="show-desktop hide-mobile" id="nav">
+                  <li id="exit" class="exit-btn hide-desktop"><img src="images/exit.svg" alt="exit menu"></li>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="music.html">Music</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="gray-container">
+        <div class="container"> 
+          <h2>About</h2>
+          <p>The Signs&Symbols Project is my personal experiment, is my space to 
+            share ideas, music and photos of the world around me. 
+          </p>
+            <ul>
+                <li>
+                  <img src="images/Landau.jpg" alt="picture" class="photo1">
+                </li>
+            </ul>
+        </div>
+    </div>
+  
+    <script>
+
+      var menu = document.getElementById('menu');
+      var nav = document.getElementById('nav');
+      var exit = document.getElementById('exit');
+  
+      menu.addEventListener('click', function(e) {
+          nav.classList.toggle('hide-mobile');
+          e.preventDefault();
+      });
+  
+      exit.addEventListener('click', function(e) {
+          nav.classList.add('hide-mobile');
+          e.preventDefault();
+      });
+  
+  </script>
+
+</body>
 </html>
