@@ -1,11 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Music</title>
+  <link rel="stylesheet" href="css/main.css">
 </head>
+
+
 <body>
-    This is the music page
+    <div class="red-container">
+        <header>
+          <h1>The Signs&Symbols Project</h1>
+           <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="images/ham.svg" alt="toggle menu" class="menu" id="menu">
+                </a>
+
+                <ul class="show-desktop hide-mobile" id="nav">
+                  <li id="exit" class="exit-btn hide-desktop"><img src="images/exit.svg" alt="exit menu"></li>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="music.html">Music</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+                                     <!-- Elementos de música-->
+    <div class="gray-container">
+        <div class="container"> 
+          <h2>Music</h2>
+          <p>Insérte descripción de la música aquí</p>
+          <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/25214395&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+
+        </div>
+    </div>
+  
+
+    <script>
+
+      var menu = document.getElementById('menu');
+      var nav = document.getElementById('nav');
+      var exit = document.getElementById('exit');
+  
+      menu.addEventListener('click', function(e) {
+          nav.classList.toggle('hide-mobile');
+          e.preventDefault();
+      });
+  
+      exit.addEventListener('click', function(e) {
+          nav.classList.add('hide-mobile');
+          e.preventDefault();
+      });
+  
+  </script>
+
 </body>
 </html>
