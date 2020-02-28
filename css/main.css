@@ -36,8 +36,8 @@ p {
 }
 
 .doc {
-    position: absolute;
-    margin: 0;
+    position: inherit;
+    margin: inherit;
     padding: 0;
     border: none;
     width: 100%;
