@@ -35,14 +35,14 @@ p {
     line-height: 1.6em;
 }
 
-.doc {
+.gray-container iframe {
     position: inherit;
     margin: 0;
     padding: 0;
     border: none;
     width: 100%;
-    height: 900px;
-    overflow: inherit;
+    height: 930px;
+    overflow: hidden;
     scroll-padding-inline-start: yes;
     border-radius: 25px;
 }
