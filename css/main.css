@@ -7,6 +7,7 @@ body{
 }
 
 header {
+    text-align: center;
     display: flex;
     justify-content: space-between;
 }
@@ -18,7 +19,7 @@ ul{
 }
 
 .red-container {
-    text-align: center;
+
     padding: .8em 1.2em;
     background-color: #C13314;
 }
